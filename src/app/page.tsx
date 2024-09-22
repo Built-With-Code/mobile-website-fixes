@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] bg-neutral-200">
+    <div className="flex flex-col min-h-[100dvh] font-[family-name:var(--font-geist-sans)] bg-neutral-200">
       <header className="px-8 py-4 flex justify-between items-center">
         <h1 className="font-semibold text-xl">Built With Code</h1>
         <span className="uppercase text-sm">Menu</span>
@@ -15,10 +15,12 @@ export default function Home() {
           Get started
         </button>
         <div className="relative h-[30vh] max-w-[90%] aspect-video rounded-lg overflow-hidden shadow-md">
-          <img
+          <Image
             className="object-cover w-full h-full"
             src="/bg-image.jpg"
             alt="Built With Code"
+            fill
+            sizes="90vw"
           />
         </div>
       </main>
