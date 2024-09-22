@@ -16,7 +16,7 @@ export default function Home() {
         </button>
         <div className="relative h-[30vh] max-w-[90%] aspect-video rounded-lg overflow-hidden shadow-md">
           <img
-            className="object-cover"
+            className="object-cover w-full h-full"
             src="/bg-image.jpg"
             alt="Built With Code"
           />
